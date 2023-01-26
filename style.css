@@ -16,6 +16,30 @@
     grid-column: 1;
     background-color: #9333ea;
     color: #f5f3ff;
+    padding: 8px;
+    display: grid;
+    grid-template-rows: minmax(50px, 10%) minmax(50px, 25%) minmax(50px, 1fr);
+}
+
+.dashboard h1{
+    font-size: 20px;
+
+}
+.dashboard h1 img {
+    height: 28px;
+    width: 28px;
+}
+
+.dashboard h1,
+.dashboard li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: .2fr 1fr;
+    gap: 4px;
+}
+
+li {
+    list-style: none;
 }
 
 .header {
