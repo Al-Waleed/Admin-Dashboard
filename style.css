@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: 1fr 4fr  1fr;
     grid-template-rows: minmax(100px, 1fr) repeat(2, minmax(250px, 3fr));
-    background-color: black;
 }
 
 .dashboard {
@@ -109,9 +108,12 @@ li {
     gap: 8px;
 }
 
-.project p span{
+.project p span,
+.trending p span{
     font-weight: 700;
 }
+
+
 
 .announcements-bar {
     grid-row: 2;
@@ -135,14 +137,34 @@ li {
     font-size: 10px;
 }
 
-.announcements div h3{
+.announcements div h3,
+.trending p span,
+.trend p {
     font-size: 12px;
 }
 
-.trending {
+.trend {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    padding: 8px;
+}
+.trend img {
+    width: 50px;
+    height: 50px;
+}
+
+.trending-bar {
     grid-row: 3;
     grid-column: 3;
+    padding-right: 32px;
 }
+
+.trending {
+    background-color: #ddd6fe;
+    border-radius: 8px;
+}
+
+
 ul img {
     width: 16px;
     height: 16px;
