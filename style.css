@@ -118,12 +118,25 @@ li {
     grid-column: 3;
     background-color: white;
     padding-top: 8px;
-    padding-right: 52px;
+    padding-right: 32px;
+    display: grid;
+    grid-template-rows: 5% 90%;
 }
 
 .announcements {
     background-color: #ddd6fe;
+    display: grid;
+    grid-template-rows: repeat(3 , minmax(100px, 1fr));
+    padding: 16px;
+    border-radius: 8px;
+}
 
+.announcements div p{
+    font-size: 10px;
+}
+
+.announcements div h3{
+    font-size: 12px;
 }
 
 .trending {
